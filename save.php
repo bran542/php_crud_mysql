@@ -13,7 +13,9 @@ if (isset($_POST['save_task'])){
         die("Query Failed");
     }
 
-    
+    //MENSAJE DE ALERTA Y COLOR DEL MENSAJE AL INSERTAR DATOS
+    $_SESSION['message'] = 'Task Saved succesfully';
+    $_SESSION['message_type'] = 'success';
 
     //Redirecciona a
     header("Location: index.php");

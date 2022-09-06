@@ -1,4 +1,8 @@
 <?php
+
+//SESION PARA GUARDAR DATOS (MENSAJES DE ALERTA)
+session_start();
+
 $conn = mysqli_connect(
     'localhost','root','','php_crud_mysql_db'
 );
